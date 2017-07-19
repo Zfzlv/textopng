@@ -1,0 +1,16 @@
+#!/bin/bash
+
+############################
+# Created by zhangshuai #
+############################
+
+# 2013-12-03 12:15:43
+# This script is used to 
+
+set -u
+
+formula_file="$1"
+for n in 1000 100 10 1; do
+	echo "================== $n =================="
+	./formulas2png.pl $formula_file $n
+done
